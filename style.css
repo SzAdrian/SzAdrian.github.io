@@ -1,0 +1,102 @@
+:root {
+  --yellow: #fefe3d;
+  --blue: #093349;
+  --dark-blue: #0a374d;
+}
+@font-face {
+  font-family: "Kristen ITC";
+  src: url("KristenITC-Regular.woff2") format("woff2"),
+    url("KristenITC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jokerman";
+  src: url("Jokerman-Regular.woff2") format("woff2"),
+    url("Jokerman-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Kristen ITC", cursive;
+  background: radial-gradient(circle, #8bb9d0 0%, #82afc1 100%);
+}
+main {
+  text-align: center;
+}
+.yellowText {
+  color: var(--yellow);
+  text-shadow: 1px 1px black;
+}
+p {
+  color: var(--blue);
+  font-size: clamp(18px, 4vw, 2rem);
+  font-weight: 400;
+  margin: 0;
+}
+h1 {
+  color: var(--dark-blue);
+  font-size: clamp(1.8rem, 5vw, 4rem);
+  font-family: "Jokerman";
+  text-shadow: 0 0 20px #fefe3dcb;
+  max-width: 500px;
+  margin-inline: auto;
+}
+.yellowShadow {
+  text-shadow: 2px 2px var(--yellow);
+}
+section {
+  margin-bottom: 2rem;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin-inline: auto;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: clamp(18px, 4vw, 1.6rem);
+}
+
+section {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 1s;
+  transform: translateY(10px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-order="1"] {
+  transition-delay: 0ms;
+}
+
+[data-order="2"] {
+  transition-delay: 80ms;
+}
+
+[data-order="3"] {
+  transition-delay: 160ms;
+}
+
+[data-order="4"] {
+  transition-delay: 240ms;
+}
+
+[data-order="5"] {
+  transition-delay: 320ms;
+}
+@media (max-width: 567px) {
+  .contact {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

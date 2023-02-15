@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <title>Csillagcsavar</title>
+  </head>
+  <body>
+    <main>
+      <h1>Csillagcsavar Tanulási Stúdió</h1>
+      <section data-order="1">
+        <p class="yellowText">Szeretnél sikeres lenni az iskolában?</p>
+      </section>
+      <section data-order="2">
+        <p>
+          Sajátíts el új szemléletmódot és stratégiákat az eredményes
+          tanuláshoz!
+        </p>
+        <p>Legyél bátor és kreatív!</p>
+        <p>Legyél a tanulási folyamataid aktív irányítója!</p>
+      </section>
+      <section data-order="3">
+        <p class="yellowText">
+          Tudatos tanulás és önbizalom fejlesztés 6-12 éves korig
+        </p>
+        <p class="yellowText">Korrepetálás alsósoknak</p>
+      </section>
+      <section data-order="4">
+        <p>Folyamatosan induló egyéni és kiscsoportos foglalkozások</p>
+      </section>
+      <section data-order="5" class="contact">
+        <a class="yellowShadow" href="tel:+36-30-504-3005">+36 30 504 3005</a>
+        <a class="yellowShadow" href="mailto:csillagcsavarstudio@gmail.com"
+          >csillagcsavarstudio@gmail.com</a
+        >
+      </section>
+    </main>
+    <script>
+      document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+          setTimeout(() => {
+            document
+              .querySelectorAll("[data-order]")
+              .forEach((elem) => elem.classList.add("fade-in"));
+          }, 1);
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
